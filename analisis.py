@@ -35,7 +35,7 @@ def tampilkan_analisis():
     with tab2:
         st.header("Data Understanding")
         st.image("https://www.texastaxcredit.com/wp-content/uploads/2025/06/115282614.jpg", width=700)
-        data = pd.read_csv("ETH_15min_2017_to_2025-07-25 new.csv")
+        data = pd.read_csv("ETH_15min_2017-08-17_to_2025-07-27 new.csv")
         st.write(data)
 
         with st.expander("Data Dictionary"):
@@ -89,7 +89,7 @@ def tampilkan_analisis():
         with st.expander("Ethereum Highest vs Lowest Price"):
             st.subheader('Ethereum All Time High Price & Lowest Price')
             st.write("Grafik berikut menunjukkan harga tertinggi dan terendah Ethereum.")
-            df = pd.read_csv('ETH_15min_2017_to_2025-07-25 new.csv')
+            df = pd.read_csv('ETH_15min_2017-08-17_to_2025-07-27 new.csv')
             df['datetime'] = pd.to_datetime(df['datetime'])
             df = df.set_index('datetime')
 

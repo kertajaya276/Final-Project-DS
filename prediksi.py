@@ -6,7 +6,7 @@ def prediksi():
     st.title("📈 Ethereum Price Forecast with ARCH Model")
 
     # Load data
-    data_path = "ETH_15min_2017_to_2025-07-25 new.csv"
+    data_path = "ETH_15min_2017-08-17_to_2025-07-27 new.csv"
     df_daily = load_and_preprocess_data(data_path)
 
     # Tampilkan data harga harian
