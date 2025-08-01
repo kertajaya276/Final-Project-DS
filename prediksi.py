@@ -18,22 +18,6 @@ def prediksi():
     p = st.sidebar.slider("Order p (ARCH)", min_value=1, max_value=5, value=1)
     forecast_days = st.sidebar.slider("Forecast Days", min_value=7, max_value=60, value=30)
 
-    # Jalankan model
-    # if st.button("🔮 Run ARCH Forecast"):
-    #     with st.spinner("Training ARCH model and forecasting..."):
-    #         actual, predicted, forecast, split_date = predict_with_arch(df_daily, p=p, forecast_days=forecast_days)
-
-    #         # Plot hasil
-    #         fig = plot_arch_forecast(
-    #             df_daily,
-    #             actual_price=actual,
-    #             predicted_price=predicted,
-    #             forecast_price=forecast,
-    #             split_date=split_date,
-    #             return_fig=True
-    #         )
-    #         st.success("Forecast completed!")
-    #         st.pyplot(fig)
     if st.button("🔮 Run ARCH Forecast"):
         with st.spinner("Training ARCH model and forecasting..."):
             actual, predicted, forecast, split_date, mape, mae, rmse = predict_with_arch(

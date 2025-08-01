@@ -53,7 +53,7 @@ def tampilkan_analisis():
             st.write("""
                     1. Data berisi 6 kolom dan 277.966 baris. 
                     2. Variabel utama yang menjadi analisis dan acuan pada model prediksi adalah close (harga penutupan)
-                    3. Periode waktu dalam dataset dari 17-08-2017 s/d 27-07-2025.stre
+                    3. Periode waktu dalam dataset dari 17-08-2017 s/d 27-07-2025
                      """)
 
     with tab3:
