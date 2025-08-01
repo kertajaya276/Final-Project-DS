@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px
 
 def tampilkan_analisis():
     tab1, tab2, tab3, tab4 = st.tabs(["Business Understanding", "Data Understanding", "Data Preparation", "Analysis & Insight"])
